@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+  }
+
+:root {
+    --plant-radius: 15;
+    --customer-default-radius: 4;
+    --slider-width: 450px;
+    --slider-position-x: 250px;
+    --slider-position-y: 70%;
+    --progress-position-x: 255px;
+    --progress-position-y: 63%;
+    --customer-opacity: 0.3;
+    --analysis-text-left: 7%;
+    --analysis-text-right: 7%;
+    --analysis-text-top: 10%;
+}
+
+h2.sub-title {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+div.mouse-hover-div {
+    background-color: #ffffff; 
+    font-size: 10px; 
+    position: absolute;
+    border-radius: 0px;
+    border: 1px solid black; 
+}
+
+div.text {
+    position: absolute;
+}
+
+
+div.filter-sub-div-0 {
+    position: absolute;
+    border-radius: 0px;
+    background-color: #2b71b3;
+}
+
+div.filter-sub-div-1 {
+    position: absolute;
+    border-radius: 0px;
+    background-color: #bbdeff;
+}
+
+div.filter-sub-div-2 {
+    position: absolute;
+    border-radius: 0px;
+    background-color: #8ac6fe;
+}
+
+div.analysis-sub-div-1 {
+    position: absolute;
+    border-radius: 0px;
+    background-color: #bbdeff;
+}
+
+div.analysis-sub-sub-div-1 {
+    position: absolute;
+    left: var(--analysis-text-left);
+    right: var(--analysis-text-right);
+    top: var(--analysis-text-top);
+}
+
+div.analysis-sub-div-2 {
+    position: absolute;
+    border-radius: 0px;
+    background-color: #8ac6fe;
+}
+
+div.analysis-sub-sub-div-2 {
+    position: absolute;
+    left: var(--analysis-text-left);
+    right: var(--analysis-text-right);
+    top: var(--analysis-text-top);
+}
+
+div.slider {
+    height: 5px;
+    width: var(--slider-width);
+    position: absolute;
+    background: #ddd;
+    border-radius: 5px;
+    left: var(--progress-position-x);
+    top: var(--progress-position-y);
+}
+
+div.progress {
+    height: 100%;
+    left: 0%;
+    right: 0%;
+    position: absolute;
+    border-radius: 5px;
+    background: #0074e1;
+}
+
+.range-input{
+    position: absolute;
+    width: var(--slider-width);
+    left: var(--slider-position-x);
+    top: var(--slider-position-y);
+}
+
+input[type=range]::-webkit-slider-thumb {
+    pointer-events: all;
+}
+
+input[type="range"] {
+    position: absolute;
+    width: 102%;
+    height: 5px;
+    top: -7px;
+    left: -2px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+div {
+    border-radius: 10px;
+}
+
+svg.map {
+    border-radius: 10px;
+    background-color: #e1f1ff
+}
+
+path.country {
+    fill: rgb(207, 207, 207);
+    vector-effect: non-scaling-stroke;
+    stroke: rgb(0, 0, 0);
+    stroke-width: 1;
+}
+
+path.defaultCustomer {  
+    opacity: 1;
+    stroke-width: var(--customer-default-radius);
+    vector-effect: non-scaling-stroke;
+    stroke-linecap: round;
+    stroke: black;
+}
+
+path.p4 {
+    opacity: 1;
+    stroke-width: var(--plant-radius);
+    vector-effect: non-scaling-stroke;
+    stroke-linecap: square;
+    stroke: rgb(0, 54, 115);
+}
+
+path.c4 {
+    opacity: var(--customer-opacity);
+    vector-effect: non-scaling-stroke;
+    stroke-linecap: round;
+    stroke: rgb(0, 119, 255);
+}
+
+path.p5 {
+    opacity: 1;
+    stroke-width: var(--plant-radius);
+    vector-effect: non-scaling-stroke;
+    stroke-linecap: square;
+    stroke: rgb(114, 0, 118);
+}
+
+path.c5 {
+    opacity: var(--customer-opacity);
+    vector-effect: non-scaling-stroke;
+    stroke-linecap: round;
+    stroke: rgb(247, 0, 255);
+}
+
+path.p6 {
+    opacity: 1;
+    stroke-width: var(--plant-radius);
+    vector-effect: non-scaling-stroke;
+    stroke-linecap: square;
+    stroke: rgb(98, 0, 0);
+}
+
+path.c6 {
+    opacity: var(--customer-opacity);
+    vector-effect: non-scaling-stroke;
+    stroke-linecap: round;
+    stroke: rgb(255, 0, 0);
+}
+
+path.p7 {
+    opacity: 1;
+    stroke-width: var(--plant-radius);
+    vector-effect: non-scaling-stroke;
+    stroke-linecap: square;
+    stroke: rgb(0, 48, 0);
+}
+
+path.c7 {
+    opacity: var(--customer-opacity);
+    vector-effect: non-scaling-stroke;
+    stroke-linecap: round;
+    stroke: rgb(0, 120, 0);
+}
+
+path.p8 {
+    opacity: 1;
+    stroke-width: var(--plant-radius);
+    vector-effect: non-scaling-stroke;
+    stroke-linecap: square;
+    stroke: rgb(106, 42, 0);
+}
+
+path.c8 {
+    opacity: var(--customer-opacity);
+    vector-effect: non-scaling-stroke;
+    stroke-linecap: round;
+    stroke: rgb(251, 100, 0);
+}
